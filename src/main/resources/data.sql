@@ -1,0 +1,11 @@
+INSERT INTO WORD (id, synid, name) VALUES (1, 1, 'Angry');
+INSERT INTO WORD (id, synid, name) VALUES (2, 1, 'Wild');
+INSERT INTO WORD (id, synid, name) VALUES (3, 1, 'Raging');
+INSERT INTO WORD (id, synid, name) VALUES (4, 1, 'Furious');
+INSERT INTO WORD (id, synid, name) VALUES (5, 2, 'Happy');
+INSERT INTO WORD (id, synid, name) VALUES (6, 2, 'Glad');
+INSERT INTO WORD (id, synid, name) VALUES (7, 2, 'Felicitous');
+INSERT INTO WORD (id, synid, name) VALUES (8, 3, 'Sad');
+INSERT INTO WORD (id, synid, name) VALUES (9, 3, 'Deplorable');
+INSERT INTO WORD (id, synid, name) VALUES (10, 3, 'Sorry');
+INSERT INTO WORD (id, synid, name) VALUES (11, 3, 'Pitiful');
