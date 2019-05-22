@@ -1,12 +1,8 @@
 package com.additude.dao;
 
-import java.util.List;
-
-import com.additude.model.Word;
-
 public interface WordRepository {
 	
-	List<Word> getWords();
+	Iterable<String> getWords();
 	
 	void addSynonyms(Iterable<String> synonyms);
 

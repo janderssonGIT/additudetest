@@ -1,26 +1,21 @@
 package com.additude.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "WORD")
+@Table(name = "word")
 public class Word {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
     
-    @Column(name = "synid")
     Long synid;
 
-
-	@Column(name = "name")
     String name;
 	
 	public Word(Long synid, String name) {
