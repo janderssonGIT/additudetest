@@ -1,14 +1,16 @@
 package com.additude.service;
 
+import java.util.List;
+
 public interface ThesaurusService {
 	
 	/// Adds the given words as synonyms to each other
-	void addSynonyms(Iterable<String> synonyms);
+	void addSynonyms(List<String> synonyms);
 
 	/// Gets the synonyms for a word
-	Iterable<String> getSynonyms(String word);
+	List<String> getSynonyms(String word);
 
 	/// Gets all words that are stored in the thesaurus
-	Iterable<String> getWords();
+	List<String> getWords();
 
 }

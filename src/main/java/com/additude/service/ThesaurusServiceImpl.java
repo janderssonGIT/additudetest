@@ -1,5 +1,7 @@
 package com.additude.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,19 +16,18 @@ public class ThesaurusServiceImpl implements ThesaurusService {
 	private WordRepository wordRepository;
 
 	@Override
-	public void addSynonyms(Iterable<String> synonyms) {
-		// TODO Auto-generated method stub
-		
+	public void addSynonyms(List<String> synonyms) {
+		this.wordRepository.addSynonyms(synonyms);
 	}
 
 	@Override
-	public Iterable<String> getSynonyms(String word) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<String> getSynonyms(String word) {
+		return this.wordRepository.getSynonyms(word);
 	}
 
 	@Override
-	public Iterable<String> getWords() {
+	public List<String> getWords() {
 		return this.wordRepository.getWords();
 	}
+	
 }
